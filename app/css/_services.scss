@@ -1,0 +1,57 @@
+/* Cards */
+.services-card-holder{
+    opacity: 0;
+}
+.services-card{
+    opacity: 0;
+    max-width: 100vw;
+    padding: 1em 1em;
+    box-shadow: 0 0.25em 0.5em 0 rgba(#242323, 0.6); 
+    border: 0.1em solid var(--color-services-card-border);
+    border-radius: 1em;
+}
+@media(min-width: 40em){
+    .services-card{
+        padding: 2em 2em;        
+    }
+}
+.services-card:hover {
+    cursor: default;
+    scale: 1.05;
+}
+.services-card ul{
+    padding: 0 0 0 0;
+}
+.services-card li{
+    list-style: none;
+    padding: 0.25em 0;
+}
+
+// Different backgrounds for the cards
+#servicescard1{
+    background: url(../assets/images/bg3.jpg);
+}
+#servicescard2{
+    background: url(../assets/images/bg1.jpg);
+}
+#servicescard3{
+    background: url(../assets/images/bg2.jpg);
+}
+#servicescard4{
+    background: url(../assets/images/bg4.jpg);
+}
+#servicescard1,
+#servicescard2,
+#servicescard3,
+#servicescard4{
+    box-shadow: inset 0 0 0 100em rgba(0, 0, 0, 0.9);
+    background-size: cover;
+}
+#servicescard1:hover,
+#servicescard2:hover,
+#servicescard3:hover,
+#servicescard4:hover{
+    box-shadow: inset 0 0 0 100em rgba(0, 0, 0, 0.7);
+    border: 0.1em solid var(--color-services-card-border-hover);
+    transition: all 200ms ease;
+}

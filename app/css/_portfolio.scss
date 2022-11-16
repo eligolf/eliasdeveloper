@@ -1,0 +1,115 @@
+/* Cards */
+.portfolio-card-holder{
+    opacity: 0;
+}
+.portfolio-card{
+    opacity: 0;
+    max-width: 100vw;
+    padding: 1em 1em;
+    box-shadow: 0 0.25em 0.5em 0 rgba(#242323, 0.6); 
+    border: 0.1em solid var(--color-portfolio-card-border);
+    border-radius: 1em;
+}
+@media(min-width: 50em){
+    .portfolio-card{
+        padding: 2em 2em;        
+    }
+}
+.portfolio-card:hover {
+    cursor: default;
+    scale: 1.03;
+    box-shadow: 0 0.4em 0.5em 0 rgba(#5f5c5c, 0.6);
+    border: 0.1em solid var(--color-portfolio-card-border-hover);
+    transition: all 50ms ease;
+}
+.portfolio-card ul{
+    padding: 0 0 0 0;
+}
+.portfolio-card li{
+    list-style: none;
+    padding: 0.25em 0;
+}
+
+.portfolio-card-bg-auktionera{
+    background: url(../assets/images/portfolio/auktionera.jpg) rgba(0, 0, 0, 0.8);
+    background-blend-mode: multiply;
+    background-position: center left;
+    background-repeat: no-repeat; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.portfolio-card-bg-auktionera:hover{
+    background: url(../assets/images/portfolio/auktionera.jpg) rgba(0, 0, 0, 0.75);
+    background-blend-mode: multiply;
+    background-position: center left;
+     background-repeat: no-repeat; 
+     -webkit-background-size: cover;
+     -moz-background-size: cover;
+     -o-background-size: cover;
+     background-size: cover;
+}
+
+.portfolio-card-bg-eir{
+    background: url(../assets/images/portfolio/eir.JPG) rgba(0, 0, 0, 0.875);
+    background-blend-mode: multiply;
+    background-position: center left;
+    background-repeat: no-repeat; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.portfolio-card-bg-eir:hover{
+    background: url(../assets/images/portfolio/eir.JPG) rgba(0, 0, 0, 0.75);
+    background-blend-mode: multiply;
+    background-position: center left;
+    background-repeat: no-repeat; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.portfolio-card-bg-endamat{
+    background: url(../assets/images/portfolio/endamat.JPG)rgba(0, 0, 0, 0.75);
+    background-blend-mode: multiply;
+    background-position: center left;
+    background-repeat: no-repeat; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.portfolio-card-bg-endamat:hover{
+    background: url(../assets/images/portfolio/endamat.JPG) rgba(0, 0, 0, 0.65);
+    background-blend-mode: multiply;
+    background-position: center left;
+    background-repeat: no-repeat; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.portfolio-card-bg-snake3d{
+    background: url(../assets/images/portfolio/snake3d.JPG) rgba(0, 0, 0, 0.65);
+    background-blend-mode: multiply;
+    background-position: center left;
+    background-repeat: no-repeat; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.portfolio-card-bg-snake3d:hover{
+    background: url(../assets/images/portfolio/snake3d.JPG) rgba(0, 0, 0, 0.35);
+    background-blend-mode: multiply;
+    background-position: center left;
+    background-repeat: no-repeat; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}

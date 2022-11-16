@@ -1,0 +1,26 @@
+footer {  
+    width: 100%;
+    padding: 3em var(--pad-global-side) 3em;
+    background: var(--color-dark-background);
+}
+
+/* Logo */
+.footer-logo{
+    display: block;
+    margin: auto;
+    max-width: var(--max-footer-logo-width);
+    padding: 0 0 1em 0;
+}
+
+.footer-logo:hover{
+    scale: 1.2;
+    transition: linear 150ms;
+}
+
+/* Copyright statement */
+.copyright-statement{
+    color: var(--color-light-grey);
+    text-align: center;
+    font-family: var(--ff-body);
+    font-size: var(--fs-400);
+}

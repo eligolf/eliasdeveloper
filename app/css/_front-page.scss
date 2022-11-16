@@ -1,0 +1,70 @@
+/* Wrappers */
+.top-home-wrapper{
+    width: 100vw;
+    height: 100vh;
+    background: url(../assets/images/bg2.jpg) var(--color-dark-grey);
+    background-size: cover;
+    background-blend-mode: multiply;
+    text-align: left;
+}
+.title-placer{
+    padding: 30vh 10vw 10vh 10vw;
+}
+
+/* Title text and its effects */
+.front-title-text{
+    color: var(--color-white);
+    font-size: var(--fs-primary-heading);
+    font-family: var(--ff-heading);
+    font-weight: var(--fw-bold);
+}
+.front-title-text:hover{
+    cursor: default;   
+}
+
+.front-title-text span:hover{    
+    display: inline-block;  
+    color: var(--color-main);
+    scale: 1.2;
+    translate: 0 -0.1em;
+    transition: scale 400ms linear
+                translate 400ms linear;
+}
+
+/* Changin words */
+.changing-title-words{
+    color: var(--color-light-grey);
+}
+
+/* Buttons */
+.primary-button {
+    text-decoration: none;
+    border: solid;
+    border-color: var(--primary-button-color);
+    border-width: 0.1rem;
+    border-radius: 0.35em;
+    padding: 0.8em 2.75em;
+    margin: 0;
+    font-family: var(--ff-heading);
+    font-weight: var(--fw-normal);
+    font-size: var(--fs-button);
+    background: transparent;
+    color: var(--primary-button-color);
+    box-shadow: 0 0.4em 1em -0.5em var(--primary-button-color); 
+    transition: background-color 100ms ease-in-out, 
+                color 100ms ease-in-out,
+                box-shadow 100ms ease-in-out,
+                border-radius 100ms ease-in-out;
+}
+
+.primary-button:hover {
+    background-color: var(--primary-button-hover-color);
+    color: var(--color-black);
+    box-shadow: 0 0.4em 1em -0.4em var(--primary-button-hover-color);
+    cursor: pointer;
+    border-radius: 0em;
+    transition: background-color 150ms ease-in-out, 
+                color 150ms ease-in-out,
+                box-shadow 150ms ease-in-out,
+                border-radius 150ms ease-in-out;
+}

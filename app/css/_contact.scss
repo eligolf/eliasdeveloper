@@ -1,0 +1,22 @@
+/* Wrappers */
+.contact-card-holder{
+    opacity: 0;
+}
+.contact-options-wrapper{
+    padding: 1em 0em;
+    color: var(--color-light-grey);   
+}
+.contact-options-wrapper div{
+    padding: 0.5em 0;
+}
+.contact-options-wrapper i{
+    font-size: var(--fs-contact-info);
+    vertical-align: middle;
+}
+.contact-options-wrapper a{
+    color: var(--color-light-grey);
+    text-decoration: none;
+}
+.contact-options-wrapper a:hover{
+    color: var(--color-main);
+}
