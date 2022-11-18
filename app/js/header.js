@@ -12,7 +12,7 @@ document.querySelector('#my-header').innerHTML = `
 <header>
 	<div class="header-bar">
 		<a class="header-logo" href="/">
-			<img src="assets/images/only-logo-light-blue.png" alt="Elias Nilsson">
+			<img src="assets/images/only-logo-light-blue.png" alt="Elias Nilsson" loading="lazy">
 		</a>
 		<div class="desktop-navigation" id="desktop-navigation">		
 			<a class="desktop-navlist-item" href="/#portfolio" aria-label="See portfolio">Portfolio</a>

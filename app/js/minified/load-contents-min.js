@@ -2,7 +2,7 @@ window.onscroll=function(e){checkHeaderState()},window.onload=function(e){checkH
 <header>
 	<div class="header-bar">
 		<a class="header-logo" href="/">
-			<img src="assets/images/only-logo-light-blue.png" alt="Elias Nilsson">
+			<img src="assets/images/only-logo-light-blue.png" alt="Elias Nilsson" loading="lazy">
 		</a>
 		<div class="desktop-navigation" id="desktop-navigation">		
 			<a class="desktop-navlist-item" href="/#portfolio" aria-label="See portfolio">Portfolio</a>
@@ -38,7 +38,7 @@ window.onscroll=function(e){checkHeaderState()},window.onload=function(e){checkH
 `;const navToggle=document.querySelector(".nav-burger-toggle"),mobileNav=document.querySelector(".mobile-navigation");navToggle.addEventListener("click",()=>{navToggle.toggleAttribute("menu-open",!mobileNav.hasAttribute("data-visible")),mobileNav.toggleAttribute("data-visible"),mobileNav.hasAttribute("data-visible")?navToggle.style.background="none":navToggle.style.background="var(--color-sticky-header)"});let navItemArray=document.querySelectorAll(".mobile-navlist-item");navItemArray.forEach(function(e){e.addEventListener("click",function(){navToggle.toggleAttribute("menu-open",!mobileNav.hasAttribute("data-visible")),mobileNav.toggleAttribute("data-visible")})}),window.onresize=function(){mobileNav.removeAttribute("data-visible"),navToggle.removeAttribute("menu-open")};const headerBar=document.querySelector(".header-bar"),headerLogo=document.querySelector(".header-logo");function checkHeaderState(){window.scrollY>10?mobileNav.hasAttribute("data-visible")?(headerBar.style.background="none",headerBar.style.marginTop="1em"):(headerBar.style.background="var(--color-sticky-header)",headerBar.style.marginTop="0em"):(headerBar.style.background="none",headerBar.style.marginTop="1em")}var currentYear=new Date().getFullYear();document.querySelector("#my-footer").innerHTML=`
 <footer>
     <a class="footer-logo" href="/">
-        <img src="assets/images/only-logo-light-blue.png" alt="Elias Nilsson">
+        <img src="assets/images/only-logo-light-blue.png" alt="Elias Nilsson" loading="lazy">
     </a>
     <div class="copyright-statement ls-10">
         \xa9 ${currentYear} Elias Nilsson
@@ -129,7 +129,7 @@ window.onscroll=function(e){checkHeaderState()},window.onload=function(e){checkH
                 <p class="normal-text">I am from Sweden and currently work remotely as a freelance developer with clients ranging from individuals to medium sized companies. If you have a request or a question, don't hesitate to <a href="#contact">contact me</a>.</p>
             </div>
             <div class='column-70'>
-                <img class="avatar-image" src="assets/images/elias-avatar-transparent.png" alt="Elias">
+                <img class="avatar-image" src="assets/images/elias-avatar-transparent.png" alt="Elias" loading="lazy">
             </div>
         </div>
     </div>

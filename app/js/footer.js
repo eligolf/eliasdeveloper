@@ -5,7 +5,7 @@ var currentYear = new Date().getFullYear();
 document.querySelector('#my-footer').innerHTML = `
 <footer>
     <a class="footer-logo" href="/">
-        <img src="assets/images/only-logo-light-blue.png" alt="Elias Nilsson">
+        <img src="assets/images/only-logo-light-blue.png" alt="Elias Nilsson" loading="lazy">
     </a>
     <div class="copyright-statement ls-10">
         © ${currentYear} Elias Nilsson

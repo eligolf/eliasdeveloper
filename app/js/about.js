@@ -10,7 +10,7 @@ document.querySelector('#my-about').innerHTML = `
                 <p class="normal-text">I am from Sweden and currently work remotely as a freelance developer with clients ranging from individuals to medium sized companies. If you have a request or a question, don't hesitate to <a href="#contact">contact me</a>.</p>
             </div>
             <div class='column-70'>
-                <img class="avatar-image" src="assets/images/elias-avatar-transparent.png" alt="Elias">
+                <img class="avatar-image" src="assets/images/elias-avatar-transparent.png" alt="Elias" loading="lazy">
             </div>
         </div>
     </div>

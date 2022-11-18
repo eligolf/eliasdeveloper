@@ -13,7 +13,7 @@ document.querySelector('#my-header').innerHTML = `
 <header>
 	<div class="header-bar">
 		<a class="header-logo" href="/">
-			<img src="assets/images/only-logo-light-blue.png" alt="Elias Nilsson">
+			<img src="assets/images/only-logo-light-blue.png" alt="Elias Nilsson" loading="lazy">
 		</a>
 		<div class="desktop-navigation" id="desktop-navigation">		
 			<a class="desktop-navlist-item" href="/#portfolio" aria-label="See portfolio">Portfolio</a>
@@ -108,7 +108,7 @@ var currentYear = new Date().getFullYear();
 document.querySelector('#my-footer').innerHTML = `
 <footer>
     <a class="footer-logo" href="/">
-        <img src="assets/images/only-logo-light-blue.png" alt="Elias Nilsson">
+        <img src="assets/images/only-logo-light-blue.png" alt="Elias Nilsson" loading="lazy">
     </a>
     <div class="copyright-statement ls-10">
         © ${currentYear} Elias Nilsson
@@ -205,7 +205,7 @@ document.querySelector('#my-about').innerHTML = `
                 <p class="normal-text">I am from Sweden and currently work remotely as a freelance developer with clients ranging from individuals to medium sized companies. If you have a request or a question, don't hesitate to <a href="#contact">contact me</a>.</p>
             </div>
             <div class='column-70'>
-                <img class="avatar-image" src="assets/images/elias-avatar-transparent.png" alt="Elias">
+                <img class="avatar-image" src="assets/images/elias-avatar-transparent.png" alt="Elias" loading="lazy"> 
             </div>
         </div>
     </div>
