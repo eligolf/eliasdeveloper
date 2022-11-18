@@ -1,3 +1,65 @@
+/* Header */
+// Window functions
+window.onscroll = function (e){
+	checkHeaderState();
+};
+
+window.onload = function (e){
+	checkHeaderState();
+};
+
+// Click to open/close mobile hamburger menu
+const navToggle = document.querySelector(".nav-burger-toggle");
+const mobileNav = document.querySelector(".mobile-navigation");
+
+navToggle.addEventListener('click', () => {
+
+	// Show/hide the navbar 
+    navToggle.toggleAttribute("menu-open", !mobileNav.hasAttribute("data-visible"));
+    mobileNav.toggleAttribute("data-visible");
+	
+	// Check if open, if so don't show any background. Else show it again.
+	if(mobileNav.hasAttribute("data-visible")){
+		navToggle.style.background = "none";
+	}else{	
+		navToggle.style.background = "var(--color-sticky-header)";		
+	}
+})
+
+// Close nav bar when clicking their links
+let navItemArray = document.querySelectorAll(".mobile-navlist-item");
+navItemArray.forEach(function(elem) {
+    elem.addEventListener('click', function() {
+		navToggle.toggleAttribute("menu-open", !mobileNav.hasAttribute("data-visible"));
+		mobileNav.toggleAttribute("data-visible");
+    });
+});
+
+// Close nav bar when resizing window
+window.onresize = function () {
+	mobileNav.removeAttribute("data-visible");
+	navToggle.removeAttribute("menu-open");
+};
+
+// Creates a sticky header when being scrolled, only show background when not opened
+const headerBar = document.querySelector(".header-bar");
+const headerLogo = document.querySelector(".header-logo");
+function checkHeaderState(){
+	if(window.scrollY > 10){		
+		if(!mobileNav.hasAttribute("data-visible")){
+			headerBar.style.background = "var(--color-sticky-header)";
+			headerBar.style.marginTop = "0em"
+		}		
+		else{
+			headerBar.style.background = "none";
+			headerBar.style.marginTop = "1em";
+		}	
+	}else{	
+		headerBar.style.background = "none";
+		headerBar.style.marginTop = "1em";
+	}
+}
+
 // Change words in the subtitle
 (function () {
     var words = ["modern websites", "user experiences", "interactive designs", "digital engagement", "company branding"],
