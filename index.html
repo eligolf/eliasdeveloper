@@ -353,9 +353,8 @@
         <a class="footer-logo" href="/">
             <img src="assets/images/only-logo-light-blue.png" alt="Elias Nilsson" loading="lazy">
         </a>
-        <div class="copyright-statement ls-10">
-            © <script defer>document.write(/\d{4}/.exec(Date())[0])</script> Elias Nilsson
-        </div>
+        <div id="yearDiv" class="copyright-statement ls-10"></div>
+        <script defer> document.getElementById("yearDiv").innerHTML = "© " + /\d{4}/.exec(Date())[0] + " Elias Nilsson"; </script>
         <div>
             <div class="mobile-nav-social ls-25">
                 <a href="https://www.facebook.com/eliasdevelopercom" target="_blank"
